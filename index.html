@@ -189,7 +189,7 @@
       transition:.5s cubic-bezier(.2,.8,.2,1)
     }
     .profile-card:hover{transform:rotate(0) translateY(-9px)}
-    .profile-card img{width:100%;height:100%;object-fit:cover;display:none}
+    .profile-card img{width:100%;height:100%;object-fit:cover;object-position:center top;display:none}
     .initials{font:800 105px "Instrument Sans";letter-spacing:-.11em;color:var(--ink)}
     .profile-label{
       position:absolute;bottom:16px;left:16px;right:16px;padding:12px 14px;border-radius:15px;
@@ -1132,7 +1132,7 @@ h1,h2,h3,h4,.brand,.brand-mark,.logo{
 .initials{
   position:relative;
   z-index:2;
-  display:flex !important;
+  display:flex;
   align-items:center;
   justify-content:center;
   width:100%;
@@ -1619,6 +1619,7 @@ h1,h2,h3,h4,.brand,.brand-mark,.logo{
         <a href="#expertise" data-section="expertise">Toolkit</a>
         <a href="#projects" data-section="projects">Work</a>
         <a href="#approach" data-section="approach">Process</a>
+        <a href="#tech-stack" data-section="tech-stack">Stack</a>
         <a href="#contact" data-section="contact">Connect</a>
       </nav>
       <div class="nav-actions">
@@ -1699,7 +1700,7 @@ h1,h2,h3,h4,.brand,.brand-mark,.logo{
               <span class="mb-glow three" aria-hidden="true"></span>
               <span class="mb-ring" aria-hidden="true"></span>
               <span class="mb-stars" aria-hidden="true"></span>
-              <img id="profilePhoto" src="profile.jpg" alt="Mahesh Bhattarai">
+              <img id="profilePhoto" src="profile.png" alt="Mahesh Bhattarai">
               <div class="initials" id="initials" aria-label="Mahesh Bhattarai">
                 <span>M</span><span>B</span>
               </div>
@@ -1712,10 +1713,8 @@ h1,h2,h3,h4,.brand,.brand-mark,.logo{
             </div>
           </div>
         </div>
-</div>
       </div>
     </section>
-</div>
 
     <section id="about">
       <div class="wrap">
@@ -1856,16 +1855,568 @@ h1,h2,h3,h4,.brand,.brand-mark,.logo{
       </div>
     </section>
 
+
+<!-- =========================================================
+     05 · MY TECHNOLOGY STACK
+     ========================================================= -->
+<section id="tech-stack" class="tech-stack-section">
+  <div class="wrap tech-stack-wrap">
+
+    <div class="section-head reveal tech-stack-head">
+      <div>
+        <div class="kicker">05 · Technology Stack</div>
+        <h2>My Technology Stack</h2>
+      </div>
+      <p>
+        A focused selection of technologies I use across
+        AI, machine learning, data, software and intelligent applications.
+      </p>
+    </div>
+
+    <div class="tech-stack-intro reveal">
+      <div class="tech-stack-intro-mark">⌘</div>
+      <div>
+        <div class="tech-stack-eyebrow">THE TOOLS BEHIND THE BUILD</div>
+        <h3>Technologies I Use To <strong>Build &amp; Create</strong></h3>
+        <p>
+          A practical collection of the core languages, AI frameworks,
+          data tools and development technologies that fit my work.
+        </p>
+      </div>
+      <div class="tech-stack-live"><span></span> STACK / ACTIVE</div>
+    </div>
+
+    <div class="tech-stack-tabs reveal" role="tablist" aria-label="Technology categories">
+      <button class="tech-stack-tab active" data-tech-category="ai" role="tab" aria-selected="true">AI / ML</button>
+      <button class="tech-stack-tab" data-tech-category="deep" role="tab" aria-selected="false">Deep Learning</button>
+      <button class="tech-stack-tab" data-tech-category="vision" role="tab" aria-selected="false">Computer Vision</button>
+      <button class="tech-stack-tab" data-tech-category="genai" role="tab" aria-selected="false">NLP / GenAI</button>
+      <button class="tech-stack-tab" data-tech-category="data" role="tab" aria-selected="false">Data Science</button>
+      <button class="tech-stack-tab" data-tech-category="dev" role="tab" aria-selected="false">Development</button>
+      <button class="tech-stack-tab" data-tech-category="web" role="tab" aria-selected="false">Web</button>
+      <button class="tech-stack-tab" data-tech-category="db" role="tab" aria-selected="false">Databases</button>
+    </div>
+
+    <!-- AI / ML -->
+    <div class="tech-stack-panel active reveal" data-tech-panel="ai">
+      <div class="tech-stack-card"><img class="tech-icon" src="https://cdn.simpleicons.org/python" alt="Python" data-fallback-src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/python.svg" loading="lazy" decoding="async"><span>Python</span><small>Core language</small></div>
+      <div class="tech-stack-card"><img class="tech-icon" src="https://cdn.simpleicons.org/numpy" alt="NumPy" data-fallback-src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/numpy.svg" loading="lazy" decoding="async"><span>NumPy</span><small>Numerical computing</small></div>
+      <div class="tech-stack-card"><img class="tech-icon" src="https://cdn.simpleicons.org/pandas" alt="Pandas" data-fallback-src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/pandas.svg" loading="lazy" decoding="async"><span>Pandas</span><small>Data analysis</small></div>
+      <div class="tech-stack-card"><img class="tech-icon" src="https://cdn.simpleicons.org/scikitlearn" alt="Scikit-learn" data-fallback-src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/scikitlearn.svg" loading="lazy" decoding="async"><span>Scikit-learn</span><small>Machine learning</small></div>
+      <div class="tech-stack-card"><img class="tech-icon" src="https://cdn.simpleicons.org/jupyter" alt="Jupyter" data-fallback-src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/jupyter.svg" loading="lazy" decoding="async"><span>Jupyter</span><small>Experimentation</small></div>
+      <div class="tech-stack-card"><img class="tech-icon" src="https://cdn.simpleicons.org/googlecolab" alt="Google Colab" data-fallback-src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/googlecolab.svg" loading="lazy" decoding="async"><span>Google Colab</span><small>Cloud notebooks</small></div>
+    </div>
+
+    <!-- Deep Learning -->
+    <div class="tech-stack-panel" data-tech-panel="deep">
+      <div class="tech-stack-card"><img class="tech-icon" src="https://cdn.simpleicons.org/tensorflow" alt="TensorFlow" data-fallback-src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/tensorflow.svg" loading="lazy" decoding="async"><span>TensorFlow</span><small>Deep learning</small></div>
+      <div class="tech-stack-card"><img class="tech-icon" src="https://cdn.simpleicons.org/pytorch" alt="PyTorch" data-fallback-src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/pytorch.svg" loading="lazy" decoding="async"><span>PyTorch</span><small>Deep learning</small></div>
+      <div class="tech-stack-card"><img class="tech-icon" src="https://cdn.simpleicons.org/keras" alt="Keras" data-fallback-src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/keras.svg" loading="lazy" decoding="async"><span>Keras</span><small>Neural networks</small></div>
+    </div>
+
+    <!-- Computer Vision -->
+    <div class="tech-stack-panel" data-tech-panel="vision">
+      <div class="tech-stack-card"><img class="tech-icon" src="https://cdn.simpleicons.org/opencv" alt="OpenCV" data-fallback-src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/opencv.svg" loading="lazy" decoding="async"><span>OpenCV</span><small>Image processing</small></div>
+      <div class="tech-stack-card"><img class="tech-icon" src="https://cdn.simpleicons.org/ultralytics" alt="Ultralytics" data-fallback-src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/ultralytics.svg" loading="lazy" decoding="async"><span>YOLO / Ultralytics</span><small>Object detection</small></div>
+      <div class="tech-stack-card"><img class="tech-icon" src="https://cdn.simpleicons.org/pytorch" alt="PyTorch" data-fallback-src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/pytorch.svg" loading="lazy" decoding="async"><span>Vision Models</span><small>Computer vision</small></div>
+    </div>
+
+    <!-- NLP / GenAI -->
+    <div class="tech-stack-panel" data-tech-panel="genai">
+      <div class="tech-stack-card"><img class="tech-icon" src="https://cdn.simpleicons.org/nltk" alt="NLTK" data-fallback-src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/nltk.svg" loading="lazy" decoding="async"><span>NLTK</span><small>Natural language</small></div>
+      <div class="tech-stack-card"><img class="tech-icon" src="https://cdn.simpleicons.org/spacy" alt="spaCy" data-fallback-src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/spacy.svg" loading="lazy" decoding="async"><span>spaCy</span><small>NLP pipelines</small></div>
+      <div class="tech-stack-card"><img class="tech-icon" src="https://cdn.simpleicons.org/huggingface" alt="Hugging Face" data-fallback-src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/huggingface.svg" loading="lazy" decoding="async"><span>Hugging Face</span><small>Open models</small></div>
+      <div class="tech-stack-card"><img class="tech-icon" src="https://cdn.simpleicons.org/openai" alt="OpenAI" data-fallback-src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/openai.svg" loading="lazy" decoding="async"><span>OpenAI API</span><small>Generative AI</small></div>
+      <div class="tech-stack-card"><img class="tech-icon" src="https://cdn.simpleicons.org/langchain" alt="LangChain" data-fallback-src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/langchain.svg" loading="lazy" decoding="async"><span>LangChain</span><small>AI applications</small></div>
+    </div>
+
+    <!-- Data Science -->
+    <div class="tech-stack-panel" data-tech-panel="data">
+      <div class="tech-stack-card"><img class="tech-icon" src="https://cdn.simpleicons.org/numpy" alt="NumPy" data-fallback-src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/numpy.svg" loading="lazy" decoding="async"><span>NumPy</span><small>Numerical analysis</small></div>
+      <div class="tech-stack-card"><img class="tech-icon" src="https://cdn.simpleicons.org/pandas" alt="Pandas" data-fallback-src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/pandas.svg" loading="lazy" decoding="async"><span>Pandas</span><small>Data analysis</small></div>
+      <div class="tech-stack-card"><img class="tech-icon" src="https://cdn.simpleicons.org/matplotlib" alt="Matplotlib" data-fallback-src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/matplotlib.svg" loading="lazy" decoding="async"><span>Matplotlib</span><small>Visualization</small></div>
+      <div class="tech-stack-card"><img class="tech-icon" src="https://cdn.simpleicons.org/seaborn" alt="Seaborn" data-fallback-src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/seaborn.svg" loading="lazy" decoding="async"><span>Seaborn</span><small>Data visualization</small></div>
+      <div class="tech-stack-card"><img class="tech-icon" src="https://cdn.simpleicons.org/powerbi" alt="Power BI" data-fallback-src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/powerbi.svg" loading="lazy" decoding="async"><span>Power BI</span><small>Business intelligence</small></div>
+    </div>
+
+    <!-- Development -->
+    <div class="tech-stack-panel" data-tech-panel="dev">
+      <div class="tech-stack-card"><img class="tech-icon" src="https://cdn.simpleicons.org/git" alt="Git" data-fallback-src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/git.svg" loading="lazy" decoding="async"><span>Git</span><small>Version control</small></div>
+      <div class="tech-stack-card"><img class="tech-icon" src="https://cdn.simpleicons.org/github" alt="GitHub" data-fallback-src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/github.svg" loading="lazy" decoding="async"><span>GitHub</span><small>Code &amp; collaboration</small></div>
+      <div class="tech-stack-card"><img class="tech-icon" src="https://cdn.simpleicons.org/docker" alt="Docker" data-fallback-src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/docker.svg" loading="lazy" decoding="async"><span>Docker</span><small>Containers</small></div>
+      <div class="tech-stack-card"><img class="tech-icon" src="https://cdn.simpleicons.org/fastapi" alt="FastAPI" data-fallback-src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/fastapi.svg" loading="lazy" decoding="async"><span>FastAPI</span><small>AI / ML APIs</small></div>
+      <div class="tech-stack-card"><img class="tech-icon" src="https://cdn.simpleicons.org/streamlit" alt="Streamlit" data-fallback-src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/streamlit.svg" loading="lazy" decoding="async"><span>Streamlit</span><small>AI applications</small></div>
+    </div>
+
+    <!-- Web -->
+    <div class="tech-stack-panel" data-tech-panel="web">
+      <div class="tech-stack-card"><img class="tech-icon" src="https://cdn.simpleicons.org/html5" alt="HTML5" data-fallback-src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/html5.svg" loading="lazy" decoding="async"><span>HTML5</span><small>Web structure</small></div>
+      <div class="tech-stack-card"><img class="tech-icon" src="https://cdn.simpleicons.org/css3" alt="CSS3" data-fallback-src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/css3.svg" loading="lazy" decoding="async"><span>CSS3</span><small>Interface styling</small></div>
+      <div class="tech-stack-card"><img class="tech-icon" src="https://cdn.simpleicons.org/javascript" alt="JavaScript" data-fallback-src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/javascript.svg" loading="lazy" decoding="async"><span>JavaScript</span><small>Web interaction</small></div>
+      <div class="tech-stack-card"><img class="tech-icon" src="https://cdn.simpleicons.org/react" alt="React" data-fallback-src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/react.svg" loading="lazy" decoding="async"><span>React</span><small>Frontend</small></div>
+    </div>
+
+    <!-- Databases -->
+    <div class="tech-stack-panel" data-tech-panel="db">
+      <div class="tech-stack-card"><img class="tech-icon" src="https://cdn.simpleicons.org/mysql" alt="MySQL" data-fallback-src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/mysql.svg" loading="lazy" decoding="async"><span>MySQL</span><small>Relational database</small></div>
+      <div class="tech-stack-card"><img class="tech-icon" src="https://cdn.simpleicons.org/postgresql" alt="PostgreSQL" data-fallback-src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/postgresql.svg" loading="lazy" decoding="async"><span>PostgreSQL</span><small>Relational database</small></div>
+      <div class="tech-stack-card"><img class="tech-icon" src="https://cdn.simpleicons.org/mongodb" alt="MongoDB" data-fallback-src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/mongodb.svg" loading="lazy" decoding="async"><span>MongoDB</span><small>Document database</small></div>
+      <div class="tech-stack-card"><img class="tech-icon" src="https://cdn.simpleicons.org/pinecone" alt="Pinecone" data-fallback-src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/pinecone.svg" loading="lazy" decoding="async"><span>Pinecone</span><small>Vector database</small></div>
+    </div>
+
+    <div class="tech-stack-footer reveal">
+      <span class="tech-stack-footer-dot"></span>
+      <span>Focused on AI / ML</span>
+      <i></i>
+      <span>Built for real-world applications</span>
+      <i></i>
+      <span>Always learning, experimenting &amp; improving</span>
+    </div>
+
+  </div>
+</section>
+
+<style>
+/* =========================================================
+   TECHNOLOGY STACK — BLENDED WITH THE EXISTING PORTFOLIO
+   ========================================================= */
+
+.tech-stack-section{
+  position:relative;
+  padding:112px 0 118px;
+  overflow:hidden;
+  border-top:1px solid rgba(24,50,75,.08);
+  background:
+    radial-gradient(circle at 8% 15%,rgba(18,168,137,.085),transparent 23rem),
+    radial-gradient(circle at 92% 78%,rgba(240,111,85,.075),transparent 25rem),
+    linear-gradient(135deg,rgba(255,253,248,.45),rgba(237,248,242,.42));
+}
+
+.tech-stack-section::before{
+  content:"";
+  position:absolute;
+  width:520px;height:520px;
+  right:-260px;top:170px;
+  border:1px solid rgba(18,168,137,.10);
+  border-radius:50%;
+  animation:techOrbit 22s linear infinite;
+  pointer-events:none;
+}
+
+.tech-stack-section::after{
+  content:"";
+  position:absolute;
+  width:260px;height:260px;
+  left:-150px;bottom:100px;
+  border:1px solid rgba(240,111,85,.10);
+  border-radius:50%;
+  animation:techOrbit 16s linear infinite reverse;
+  pointer-events:none;
+}
+
+.tech-stack-wrap{position:relative;z-index:1}
+
+.tech-stack-head{margin-bottom:26px}
+.tech-stack-head h2{position:relative}
+.tech-stack-head h2::after{
+  content:"";
+  display:inline-block;
+  width:10px;height:10px;
+  margin:0 0 10px 12px;
+  border-radius:50%;
+  background:#12a889;
+  box-shadow:0 0 0 7px rgba(18,168,137,.09);
+  animation:techPulse 1.8s ease-in-out infinite;
+}
+
+.tech-stack-intro{
+  display:grid;
+  grid-template-columns:auto 1fr auto;
+  align-items:center;
+  gap:20px;
+  padding:22px 24px;
+  margin-bottom:28px;
+  border:1px solid rgba(24,50,75,.10);
+  border-radius:24px;
+  background:
+    radial-gradient(circle at 100% 0%,rgba(18,168,137,.09),transparent 30%),
+    linear-gradient(145deg,rgba(255,255,255,.72),rgba(255,253,248,.54));
+  box-shadow:0 18px 55px rgba(24,50,75,.055);
+  backdrop-filter:blur(14px);
+  position:relative;
+  overflow:hidden;
+}
+
+.tech-stack-intro::before{
+  content:"";
+  position:absolute;
+  top:0;left:-30%;
+  width:30%;height:2px;
+  background:linear-gradient(90deg,transparent,#12a889,#76b7ed,#f06f55,transparent);
+  animation:techSweep 5.8s ease-in-out infinite;
+}
+
+.tech-stack-intro-mark{
+  width:58px;height:58px;
+  display:grid;place-items:center;
+  border-radius:18px;
+  background:linear-gradient(145deg,#18324b,#214b5b);
+  color:#fff9ed;
+  font:700 24px "Space Grotesk",sans-serif;
+  box-shadow:0 13px 28px rgba(24,50,75,.16);
+}
+
+.tech-stack-eyebrow{
+  font:700 .62rem/1 "DM Mono",monospace;
+  letter-spacing:.15em;
+  color:#7b8a92;
+  margin-bottom:7px;
+}
+
+.tech-stack-intro h3{
+  font:700 clamp(21px,2.7vw,31px)/1.05 "Space Grotesk","Instrument Sans",sans-serif;
+  letter-spacing:-.045em;
+  color:#18324b;
+}
+
+.tech-stack-intro h3 strong{
+  color:#12a889;
+}
+
+.tech-stack-intro p{
+  margin-top:7px;
+  color:#71818a;
+  font-size:13px;
+}
+
+.tech-stack-live{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  white-space:nowrap;
+  padding:9px 11px;
+  border-radius:999px;
+  border:1px solid rgba(18,168,137,.14);
+  background:rgba(18,168,137,.055);
+  color:#27836f;
+  font:600 .62rem/1 "DM Mono",monospace;
+  letter-spacing:.08em;
+}
+
+.tech-stack-live span{
+  width:7px;height:7px;border-radius:50%;
+  background:#12a889;
+  box-shadow:0 0 0 5px rgba(18,168,137,.09);
+  animation:techPulse 1.7s infinite;
+}
+
+.tech-stack-tabs{
+  display:flex;
+  gap:5px;
+  overflow-x:auto;
+  scrollbar-width:none;
+  padding:5px;
+  margin-bottom:22px;
+  border:1px solid rgba(24,50,75,.09);
+  border-radius:18px;
+  background:rgba(255,253,248,.52);
+  box-shadow:0 10px 30px rgba(24,50,75,.035);
+  backdrop-filter:blur(12px);
+}
+
+.tech-stack-tabs::-webkit-scrollbar{display:none}
+
+.tech-stack-tab{
+  flex:0 0 auto;
+  border:0;
+  border-radius:12px;
+  background:transparent;
+  color:#657780;
+  padding:10px 13px;
+  cursor:pointer;
+  font:700 11px "Instrument Sans",sans-serif;
+  transition:.25s ease;
+  position:relative;
+}
+
+.tech-stack-tab:hover{
+  color:#18324b;
+  background:rgba(255,255,255,.65);
+}
+
+.tech-stack-tab.active{
+  color:#fff;
+  background:linear-gradient(135deg,#18324b,#215466);
+  box-shadow:0 8px 18px rgba(24,50,75,.15);
+}
+
+.tech-stack-panel{
+  display:none;
+  grid-template-columns:repeat(6,minmax(0,1fr));
+  gap:13px;
+}
+
+.tech-stack-panel.active{
+  display:grid;
+  animation:techPanelIn .45s cubic-bezier(.2,.8,.2,1);
+}
+
+.tech-stack-card{
+  min-height:158px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:9px;
+  padding:18px 12px;
+  border:1px solid rgba(24,50,75,.085);
+  border-radius:20px;
+  background:rgba(255,253,248,.64);
+  box-shadow:0 10px 28px rgba(24,50,75,.035);
+  position:relative;
+  overflow:hidden;
+  transition:transform .3s ease,box-shadow .3s ease,border-color .3s ease;
+}
+
+.tech-stack-card::before{
+  content:"";
+  position:absolute;
+  width:100px;height:100px;
+  right:-55px;bottom:-55px;
+  border-radius:50%;
+  background:rgba(18,168,137,.085);
+  transition:.45s ease;
+}
+
+.tech-stack-card:nth-child(3n)::before{background:rgba(118,183,237,.085)}
+.tech-stack-card:nth-child(3n+2)::before{background:rgba(240,111,85,.075)}
+
+.tech-stack-card:hover{
+  transform:translateY(-8px);
+  border-color:rgba(18,168,137,.24);
+  box-shadow:0 20px 42px rgba(24,50,75,.10);
+}
+
+.tech-stack-card:hover::before{transform:scale(1.8)}
+
+.tech-stack-card img{
+  width:48px;height:48px;
+  object-fit:contain;
+  position:relative;
+  z-index:1;
+  transition:transform .3s ease,filter .3s ease;
+}
+
+.tech-stack-card:hover img{
+  transform:scale(1.12) rotate(-2deg);
+}
+
+.tech-stack-card span{
+  position:relative;
+  z-index:1;
+  color:#263c4b;
+  font:700 12px/1.2 "Instrument Sans",sans-serif;
+  text-align:center;
+}
+
+.tech-stack-card small{
+  position:relative;
+  z-index:1;
+  color:#8a969d;
+  font:500 9px/1.25 "DM Mono",monospace;
+  text-align:center;
+  max-width:125px;
+}
+
+.tech-stack-footer{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:13px;
+  flex-wrap:wrap;
+  margin-top:24px;
+  padding-top:19px;
+  border-top:1px solid rgba(24,50,75,.08);
+  color:#788890;
+  font:600 9px "DM Mono",monospace;
+  letter-spacing:.07em;
+  text-transform:uppercase;
+}
+
+.tech-stack-footer i{
+  width:4px;height:4px;border-radius:50%;
+  background:#f06f55;
+  box-shadow:0 0 0 4px rgba(240,111,85,.07);
+}
+
+.tech-stack-footer-dot{
+  width:7px;height:7px;border-radius:50%;
+  background:#12a889;
+  box-shadow:0 0 0 5px rgba(18,168,137,.08);
+}
+
+@keyframes techPanelIn{
+  from{opacity:0;transform:translateY(10px) scale(.995)}
+  to{opacity:1;transform:none}
+}
+
+@keyframes techSweep{
+  0%,58%{transform:translateX(-30%);opacity:0}
+  72%{opacity:1}
+  100%{transform:translateX(380%);opacity:0}
+}
+
+@keyframes techPulse{
+  50%{transform:scale(.72);opacity:.55}
+}
+
+@keyframes techOrbit{
+  to{transform:rotate(360deg)}
+}
+
+@media(max-width:1050px){
+  .tech-stack-panel{grid-template-columns:repeat(4,1fr)}
+}
+
+@media(max-width:760px){
+  .tech-stack-section{padding:88px 0}
+  .tech-stack-intro{grid-template-columns:auto 1fr}
+  .tech-stack-live{grid-column:2;justify-self:start}
+  .tech-stack-panel{grid-template-columns:repeat(3,1fr);gap:10px}
+  .tech-stack-card{min-height:132px;padding:14px 8px}
+  .tech-stack-card img{width:42px;height:42px}
+}
+
+@media(max-width:520px){
+  .tech-stack-intro{grid-template-columns:1fr;gap:13px;padding:20px}
+  .tech-stack-intro-mark{width:50px;height:50px}
+  .tech-stack-live{grid-column:auto}
+  .tech-stack-panel{grid-template-columns:repeat(2,1fr)}
+  .tech-stack-card{min-height:126px}
+  .tech-stack-card span{font-size:11px}
+  .tech-stack-card small{font-size:8px}
+  .tech-stack-footer{justify-content:flex-start}
+}
+
+@media(prefers-reduced-motion:reduce){
+  .tech-stack-section::before,
+  .tech-stack-section::after,
+  .tech-stack-intro::before,
+  .tech-stack-live span,
+  .tech-stack-head h2::after{animation:none!important}
+}
+</style>
+
+<script>
+(() => {
+  const tabs = document.querySelectorAll(".tech-stack-tab");
+  const panels = document.querySelectorAll(".tech-stack-panel");
+
+  tabs.forEach(tab => {
+    tab.addEventListener("click", () => {
+      const category = tab.dataset.techCategory;
+
+      tabs.forEach(item => {
+        item.classList.toggle("active", item === tab);
+        item.setAttribute("aria-selected", item === tab ? "true" : "false");
+      });
+
+      panels.forEach(panel => {
+        panel.classList.toggle(
+          "active",
+          panel.dataset.techPanel === category
+        );
+      });
+    });
+  });
+})();
+</script>
+
+<script>
+/* =========================================================
+   TECHNOLOGY ICON FALLBACK
+   1. Try the existing Simple Icons CDN.
+   2. If it fails, try jsDelivr.
+   3. If that also fails, show a polished inline SVG badge.
+   This keeps the stack visually complete even when a CDN is blocked.
+   ========================================================= */
+(() => {
+  const iconImages = document.querySelectorAll(".tech-stack-card .tech-icon");
+
+  const makeFallback = (label) => {
+    const clean = (label || "TECH").replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;").replace(/>/g, "&gt;")
+      .trim();
+
+    const words = clean.split(/\s+/).filter(Boolean);
+    let initials = words.length > 1
+      ? words.slice(0, 2).map(w => w[0]).join("")
+      : clean.slice(0, 2);
+
+    initials = initials.toUpperCase();
+
+    const svg = `
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+        <defs>
+          <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#18324b"/>
+            <stop offset=".52" stop-color="#12a889"/>
+            <stop offset="1" stop-color="#f06f55"/>
+          </linearGradient>
+        </defs>
+        <rect x="4" y="4" width="92" height="92" rx="24" fill="url(#g)"/>
+        <circle cx="78" cy="22" r="8" fill="#fff7e8" opacity=".75"/>
+        <circle cx="22" cy="79" r="5" fill="#e8ad3d" opacity=".9"/>
+        <text x="50" y="58"
+              text-anchor="middle"
+              font-family="Arial,Helvetica,sans-serif"
+              font-size="${initials.length > 2 ? 25 : 31}"
+              font-weight="800"
+              fill="#fff7e8">${initials}</text>
+      </svg>`;
+
+    return "data:image/svg+xml;charset=UTF-8," + encodeURIComponent(svg);
+  };
+
+  iconImages.forEach(img => {
+    const original = img.getAttribute("src");
+    const secondary = img.dataset.fallbackSrc;
+    let triedSecondary = false;
+    let finished = false;
+
+    img.addEventListener("error", () => {
+      if (finished) return;
+
+      if (!triedSecondary && secondary && original !== secondary) {
+        triedSecondary = true;
+        img.src = secondary;
+        return;
+      }
+
+      finished = true;
+      img.classList.add("icon-fallback");
+      img.src = makeFallback(img.alt);
+      img.setAttribute("aria-label", img.alt);
+    });
+
+    // Handles cached/instant failures too.
+    if (img.complete && img.naturalWidth === 0) {
+      img.dispatchEvent(new Event("error"));
+    }
+  });
+})();
+</script>
+
     <section class="contact" id="contact">
       <div class="wrap">
         <div class="contactbox reveal">
           <div>
-            <div class="kicker" style="color:var(--gold)">05 · Connect</div>
+            <div class="kicker" style="color:var(--gold)">06 · Connect</div>
             <h2>Have an idea?<br>Let's make it real.</h2>
             <p>Code, collaboration, experiments or a good technical conversation — I'm always interested.</p>
           </div>
           <div class="actions">
-            <a class="btn" href="mailto:your-email@example.com">Email me ↗</a>
+            <a class="btn" href="mailto:maheshbhattarai030@gmail.com">Email me ↗</a>
             <a class="btn" href="https://www.linkedin.com/in/mahesh-bhattarai-7974483b7/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
           </div>
         </div>
@@ -1976,12 +2527,12 @@ h1,h2,h3,h4,.brand,.brand-mark,.logo{
     const initials = document.getElementById("initials");
     photo?.addEventListener("load", () => {
       photo.style.display = "block";
-      initials.style.display = "none";
+      initials.style.setProperty("display", "none", "important");
       document.querySelector(".profile-card")?.classList.add("has-photo");
     });
     photo?.addEventListener("error", () => {
       photo.style.display = "none";
-      initials.style.display = "flex";
+      initials.style.setProperty("display", "flex", "important");
       document.querySelector(".profile-card")?.classList.remove("has-photo");
     });
 
@@ -2406,6 +2957,135 @@ h1,h2,h3,h4,.brand,.brand-mark,.logo{
   .hero-brief:before,
   .brief-dot{
     animation:none!important;
+  }
+}
+</style>
+
+
+<style>
+/* =========================================================
+   TECHNOLOGY ICONS — RESILIENT + CONSISTENT
+   Prevents broken/blank logos from making the cards look empty.
+   ========================================================= */
+
+.tech-stack-card .tech-icon{
+  width:52px;
+  height:52px;
+  flex:0 0 52px;
+  display:block;
+  object-fit:contain;
+  padding:7px;
+  border-radius:14px;
+  background:rgba(255,255,255,.72);
+  border:1px solid rgba(24,50,75,.07);
+  box-shadow:
+    0 8px 18px rgba(24,50,75,.055),
+    inset 0 1px 0 rgba(255,255,255,.85);
+  position:relative;
+  z-index:2;
+  transition:
+    transform .3s ease,
+    filter .3s ease,
+    box-shadow .3s ease,
+    background .3s ease;
+}
+
+.tech-stack-card:hover .tech-icon{
+  transform:translateY(-2px) scale(1.08);
+  box-shadow:
+    0 12px 24px rgba(24,50,75,.10),
+    inset 0 1px 0 rgba(255,255,255,.9);
+}
+
+/* Self-contained SVG fallback inserted by the error handler. */
+.tech-stack-card .tech-icon.icon-fallback{
+  padding:0;
+  object-fit:contain;
+  background:linear-gradient(145deg,#18324b,#12a889);
+  border-color:rgba(255,255,255,.25);
+}
+
+/* Better spacing/alignment for every card regardless of text length. */
+.tech-stack-card{
+  text-align:center;
+}
+
+.tech-stack-card span{
+  min-height:30px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  line-height:1.18;
+  max-width:145px;
+}
+
+.tech-stack-card small{
+  min-height:24px;
+  display:flex;
+  align-items:flex-start;
+  justify-content:center;
+}
+
+@media(max-width:760px){
+  .tech-stack-card .tech-icon{
+    width:46px;
+    height:46px;
+    flex-basis:46px;
+  }
+}
+
+@media(max-width:520px){
+  .tech-stack-card .tech-icon{
+    width:44px;
+    height:44px;
+    flex-basis:44px;
+  }
+}
+</style>
+
+
+<style>
+/* =========================================================
+   TECHNOLOGY STACK — HEADER + GRID ALIGNMENT PASS
+   Matches the clean editorial layout shown in the reference.
+   ========================================================= */
+
+.tech-stack-head{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) minmax(340px,510px);
+  align-items:end;
+  gap:56px;
+  margin-bottom:32px;
+}
+
+.tech-stack-head > div{
+  min-width:0;
+}
+
+.tech-stack-head p{
+  margin:0;
+  max-width:510px;
+  justify-self:end;
+  line-height:1.7;
+}
+
+.tech-stack-panel{
+  align-items:stretch;
+}
+
+.tech-stack-card{
+  min-width:0;
+}
+
+@media(max-width:900px){
+  .tech-stack-head{
+    grid-template-columns:1fr;
+    gap:14px;
+  }
+
+  .tech-stack-head p{
+    justify-self:start;
+    max-width:620px;
   }
 }
 </style>
